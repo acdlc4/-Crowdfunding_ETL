@@ -23,6 +23,9 @@ CREATE TABLE "category" (
      )
 );
 
+SELECT * FROM information_schema.tables
+WHERE table_name = 'category';
+
 CREATE TABLE "subcategory" (
     "subcategory_id" varchar(8)   NOT NULL,
     "subcategory" varchar(17)   NOT NULL,
@@ -30,6 +33,10 @@ CREATE TABLE "subcategory" (
         "subcategory_id"
      )
 );
+
+SELECT * FROM information_schema.tables
+WHERE table_name = 'subcategory';
+
 
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
@@ -40,6 +47,10 @@ CREATE TABLE "contacts" (
         "contact_id"
      )
 );
+
+SELECT * FROM information_schema.tables
+WHERE table_name = 'contacts';
+
 CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
@@ -59,6 +70,9 @@ CREATE TABLE "campaign" (
         "cf_id","contact_id"
      )
 );
+
+SELECT * FROM information_schema.tables
+WHERE table_name = 'campaign';
 
 
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_contact_id" FOREIGN KEY("contact_id")
