@@ -1,6 +1,8 @@
 # Crowdfunding_ETL
 
 
+In this project, our group built an ETL pipeline to extract and transform crowdfunding data. Four csv files were generated and used to create an ERD and table schema. All csv files were put into a Postgres database. (Python, Pandas, Python dictionary methods and regular expressions were used to complete this project).
+
 #### Jupyter Notebook location:
 - https://github.com/acdlc4/Crowdfunding_ETL/blob/main/ETL_Mini_Project_Starter_Code.ipynb
 
