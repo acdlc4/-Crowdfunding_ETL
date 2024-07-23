@@ -91,3 +91,6 @@ SELECT * FROM contacts;
 SELECT * FROM category;
 SELECT * FROM subcategory;
 SELECT * FROM campaign;
+
+----NOTE: When importing the CSV files to create a Postgres DB, import the files according to 
+----  the table creation order in the code above to avoid any import errors.
